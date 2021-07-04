@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url(./hush.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+    font-family: sans-serif;
+    background-blend-mode: overlay;
+    background-color: rgba(51, 51, 51, 0.79);
+}
+.form-box{
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    height: 100%;
+    width: 400px;  
+    }
+    .button-box{
+        width: 220px;
+        margin: 35px auto;
+        position: relative;
+        border-radius: 30px;
+
+    }
+    .toggle-btn{
+        padding:  10px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+        border-radius: 30px;
+        background: linear-gradient(to right,#ff105f,#ffad06);
+
+    
+    }
+    .input-field{
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-top: 0;
+        border-right: 0;
+        outline: none;
+        background: transparent;
+    
+    
+    }
+    .submit-btn{
+        width: 85%;
+        padding: 10px 30px ;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background: linear-gradient(to right,#ff105f,#ffad06);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+    }
+    .log{
+        display: flex;
+        background:rgb(12, 12, 12);
+        opacity: .8;
+        padding: 2px;
+        padding-bottom: 10px;
+    }
+    .log-text{
+        color: rgb(216, 209, 209);
+        font-family: cursive;
+        font-size: 2em;
+    }
+    img{
+        height: 50px;
+        width: 50px;
+    }

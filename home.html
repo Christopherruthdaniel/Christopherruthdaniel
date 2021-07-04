@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TransFuse</title>
+    <link rel="stylesheet" href="me.css">
+    <link rel="stylesheet" href="we.css">
+</head>
+<body>
+    <div class="log">
+        <h1 class="log-text">Trans<img src="lol.png" alt="">Fuse</h1>
+        <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+               <i></i>
+               <i></i>
+               <i></i>
+            </label>
+            <div class="wrapper">
+                <ul>
+                    <li><a href="home.html">Home</a></li>                    
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="bood.html">Blood Compactability</a></li>
+                    <li><a href="#">Registered Hospitals</a></li>
+
+
+                </ul> 
+            </div>
+        </nav>
+    </div>
+    </div>
+    
+    <div class="me">
+        <h1 class="for" >Give Blood</h1>
+        <p>Donate Today, Save a Life</p>
+    </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick=login()>Sign  in</button>
+                <button type="button" class="toggle-btn" onclick=register()>Register</button>
+
+            </div>
+            <form id="login" class="input">
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="password" required>
+                <input type="checkbox" class="checkbox"><span>Remember password</span>
+                <button type="Submit" class="submit-btn">Sign in</button>
+            </form>
+
+            <form id="register" class="input">
+                <input type="text" class="input-field" placeholder="Hospital name" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="State" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="checkbox"><span>i agre to the terms & conditions</span>
+                <button type="Submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left ="-400px";
+            y.style.left ="50px";
+            z.style.left ="110px";
+
+
+        }
+        function login(){
+            x.style.left ="50px";
+            y.style.left ="450px";
+            z.style.left ="0";
+
+
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url(./hush.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200vh;
+    font-family: sans-serif;
+    background-blend-mode: overlay;
+    background-color: rgba(51, 51, 51, 0.79);
+}
+.log{
+    display: flex;
+    background:rgb(12, 12, 12);
+    opacity: .8;
+    padding: 2px;
+    padding-bottom: 10px;
+}
+.log-text{
+    color: rgb(216, 209, 209);
+    font-family: cursive;
+    font-size: 2em;
+}
+.u{
+    height: 50px;
+    width: 50px;
+}
+
+.toggle-btn{
+    width: 40px;
+    padding:  10px 50px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    margin: 20px;
+    
+
+}
+.liquidblood{
+    background-color: red;
+    height: 300px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 800px;
+}
+
+.content{
+   margin-left: 500px;
+   margin-top: 70px;
+
+}
+.you{
+    position: absolute
+
+  
+}
+
+.we{
+    background-color:  #ffe252;;
+    width: 120px;
+    height: 100px;
+}
+.i{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 45px;
+}
+.ruth{
+    margin-top: 600px;
+    margin-left: 250px;
+   
+}
+.toggle{
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    border-radius: 40%;
+    height: 100px;
+    width: 100px;
+
+
+}
+.tog{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30%;
+}
+.ruth2{
+    margin-top:150px;
+    margin-left: 250px;
+   
+}

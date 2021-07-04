@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title><link rel="stylesheet" href="us.css">
+    <link rel="stylesheet" href="me.css">
+   
+
+</head>
+<body>
+    <div class="log">
+        <h1 class="log-text">Trans<img  class="u"src="lol.png" alt="">Fuse</h1>
+        <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+               <i></i>
+               <i></i>
+               <i></i>
+            </label>
+            <div class="wrapper">
+                <ul>
+                    <li><a href="home.html">Home</a></li>                    
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="bood.html">Blood Compactability</a></li>
+                    <li><a href="#">Registered Hospitals</a></li>
+
+
+                </ul> 
+            </div>
+        </nav>
+    </div>
+    </div>
+
+
+    <div class="you" >
+
+
+        <h1 style="margin-left: 600px; font-family: sans-serif; width: 200px; color:  rgb(216, 209, 209);">Blood Type</h1>
+       
+        <div class="liquidblood">
+            <div class="we">
+                <h1 class="i" id="bloodtype">Plasma</h1>
+        
+            </div>
+            <p style="position: absolute; margin-top: 25px; margin-left: 20px; " id="last">redblood cells</p>
+        </div>
+        <div class="content">
+            <div class="me">
+                <button type="button" class="toggle-btn" id="a" onclick=afunction()>A</button><br>
+                <button type="button" class="toggle-btn" id="b" onclick=bfunction()>B</button><br>
+                <button type="button" class="toggle-btn" id="ab" onclick=abfunction() >AB</button><br>
+                <button type="button" class="toggle-btn" id="o" onclick=ofunction()>O</button><br>
+                
+            </div>
+           
+    </div>
+
+        
+        </div>
+
+
+        <br>
+
+
+        <img src="six.png" alt=""  id="five" style="position: absolute;margin-top: 600px;margin-left: 100px;z-index: -1;">
+        <img src="six.png" alt="" id="one" style="position: absolute;margin-top: 600px;margin-left: 510px;z-index: -1; ">
+        <img src="six.png" alt="" id="two" style="position: absolute;margin-top: 600px;margin-left: 720px;z-index: -1;">
+        <img src="six.png" alt="" id="three" style="position: absolute;margin-top: 600px;margin-left: 310px;z-index: -1;">
+        <img src="five.png" alt="" id="four" style="position: absolute;margin-top: 620px;margin-left: 300px;z-index: -1; width: 500px;height: 300px;">
+        <img src="five.png" alt="" id="six" style="position: absolute;margin-top: 635px;margin-left: 550px;z-index: -1; width:250px; height: 250px;">
+        <img src="four.png" alt="" id="seven" style="position: absolute;margin-top: 616px;margin-left: 730px;z-index: -1; width: 270px;height: 300px;">
+        <img src="nine.png" alt="" id="eight" style="position: absolute;margin-top: 610px;margin-left: 390px;z-index: -1; width: 600px;height: 300px;">
+        <img src="nine.png" alt="" id="nine" style="position: absolute;margin-top: 610px;margin-left: 600px;z-index: -1; width: 370px;height: 300px;">
+ 
+
+
+
+        <div class="ruth">
+            <!-- <h1 style="margin-left: 600px; font-family: sans-serif; width: 200px; color:  rgb(216, 209, 209); margin-top: -50;">Donation </h1> -->
+            <button type="button" class="toggle" id="ablood" onclick=abloodfunction()>A</button>
+            <button type="button" class="toggle" id="bblood" onclick=bbloodfunction()>B</button>
+            <button type="button" class="toggle" id="abblood" onclick=abbloodfunction() >AB</button>
+            <button type="button" class="toggle" id="oblood" onclick=obloodfunction()>O</button>
+            
+        </div>
+        
+
+
+        <div class="ruth2">
+            <button type="button" class="tog" >A</button>
+            <button type="button" class="tog" >B</button>
+            <button type="button" class="tog" >AB</button>
+            <button type="button" class="tog" >O</button>
+            
+        </div>
+ 
+
+
+
+ 
+        <script>
+
+                     var bt = document.getElementById("bloodtype");
+                        var i = document.getElementById("last");
+                        var a = document.getElementById("a");
+                        var b = document.getElementById("b");
+                        var ab = document.getElementById("ab");
+                        var o = document.getElementById("o");
+                 
+                 
+                         function afunction(){
+                            bt.innerHTML ="A";
+                            i.innerHTML ="has only the A antigen on redcells and B antibody in the plasma";
+                         }
+
+
+                         function bfunction(){
+                         bt.innerHTML ="B";
+                            i.innerHTML ="has only the B antigen on redcells and A antibody in the plasma";
+                         }
+
+                         function abfunction(){ 
+                             bt.innerHTML ="AB";
+                            i.innerHTML ="has both A and B antigens on red cells but neither A nor B antibody in the plasma";
+                         } 
+                         
+                         function ofunction(){
+                            bt.innerHTML ="O";
+                            i.innerHTML ="has neither A nor B antigenson red cells but both A and B antibody are in the plasma";
+                         }
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+                       
+
+
+                         var one = document.getElementById("one");
+                        var two = document.getElementById("two");
+                        var three = document.getElementById("three");
+                        var four = document.getElementById("four");
+                        var five = document.getElementById("five");
+                        var six= document.getElementById("six");
+                        var seven = document.getElementById("seven");
+                        var eight = document.getElementById("eight");
+                        var nine = document.getElementById("nine");
+                        
+                 
+                 
+                
+                        one.style.visibility="hidden"
+                            two.style.visibility="hidden"
+                            three.style.visibility="hidden"
+                            four.style.visibility="hidden"
+                            five.style.visibility="hidden"
+                            six.style.visibility="hidden"
+                            seven.style.visibility="hidden"
+                            eight.style.visibility="hidden"
+                            nine.style.visibility="hidden"
+
+
+
+
+
+                        function abloodfunction(){
+                            one.style.visibility="hidden"
+                            two.style.visibility="hidden"
+                            three.style.visibility="hidden"
+                            four.style.visibility="hidden"
+                            five.style.visibility="hidden"
+                            six.style.visibility="hidden"
+                            seven.style.visibility="hidden"
+                            eight.style.visibility="hidden"
+                            nine.style.visibility="hidden"
+
+                            one.style.visibility="visible"
+                            nine.style.visibility="visible"
+                      
+                         }
+
+
+                         function bbloodfunction(){
+                            one.style.visibility="hidden"
+                            two.style.visibility="hidden"
+                            three.style.visibility="hidden"
+                            four.style.visibility="hidden"
+                            five.style.visibility="hidden"
+                            six.style.visibility="hidden"
+                            seven.style.visibility="hidden"
+                            eight.style.visibility="hidden"
+                            nine.style.visibility="hidden"
+
+
+                            six.style.visibility="visible"
+                            two.style.visibility="visible"
+                         }
+
+                         function abbloodfunction(){ 
+                            one.style.visibility="hidden"
+                            two.style.visibility="hidden"
+                            three.style.visibility="hidden"
+                            four.style.visibility="hidden"
+                            five.style.visibility="hidden"
+                            six.style.visibility="hidden"
+                            seven.style.visibility="hidden"
+                            eight.style.visibility="hidden"
+                            nine.style.visibility="hidden"
+
+                            three.style.visibility="visible"
+                            four.style.visibility="visible"
+                         } 
+                         
+                         function obloodfunction(){
+                            one.style.visibility="hidden"
+                            two.style.visibility="hidden"
+                            three.style.visibility="hidden"
+                            four.style.visibility="hidden"
+                            five.style.visibility="hidden"
+                            six.style.visibility="hidden"
+                            seven.style.visibility="hidden"
+                            eight.style.visibility="hidden"
+                            nine.style.visibility="hidden"
+
+
+                            one.style.visibility="visible"
+                            two.style.visibility="visible"
+                            one.style.visibility="visible"
+                            two.style.visibility="visible"
+                         }
+                 
+
+    
+                 </script>
+            
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -27,7 +27,7 @@ nav ul li a{
     
 }
 
-@media screen and (max-width: 864px){
+@media screen and (max-width: 768px){
         
     .wrapper{
         
@@ -111,8 +111,8 @@ nav ul li a{
     }
     .nav-btn i{
         display: block;
-        width: 20px;
-        height: 2px;
+        width: 35px;
+        height: 7px;
         background:rgb(216, 209, 209);;
         border-radius: 2px;
         margin-left: 14px;

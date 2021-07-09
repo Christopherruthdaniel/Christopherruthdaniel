@@ -7,6 +7,8 @@
 
 </head>
 <body>
+    <div class="cursor"></div>
+    
     <div class="log">
         <h1 class="log-text">Trans<img  class="u"src="lol.png" alt="">Fuse</h1>
         <div class="container">
@@ -31,7 +33,6 @@
     </div>
     </div>
 
-
     <div class="you" >
 
 
@@ -39,10 +40,10 @@
        
         <div class="liquidblood">
             <div class="we">
-                <h1 class="i" id="bloodtype">Plasma</h1>
+                <h1 class="i" id="bloodtype">A</h1>
         
             </div>
-            <p style="position: absolute; margin-top: 25px; margin-left: 20px; " id="last">redblood cells</p>
+            <p style="position: absolute; margin-top: 25px; margin-left: 15px; " id="last">redblood cells</p>
         </div>
         <div class="content">
             <div class="me">
@@ -62,10 +63,10 @@
         <br>
 
 
-        <img src="six.png" alt=""  id="five" style="position: absolute;margin-top: 600px;margin-left: 100px;z-index: -1;">
-        <img src="six.png" alt="" id="one" style="position: absolute;margin-top: 600px;margin-left: 510px;z-index: -1; ">
-        <img src="six.png" alt="" id="two" style="position: absolute;margin-top: 600px;margin-left: 720px;z-index: -1;">
-        <img src="six.png" alt="" id="three" style="position: absolute;margin-top: 600px;margin-left: 310px;z-index: -1;">
+        <img src="six.png" alt=""  id="five" style="position: absolute;margin-top: 600px;margin-left: 350px;z-index: -1;">
+        <img src="six.png" alt="" id="one" style="position: absolute;margin-top: 600px;margin-left: 750px;z-index: -1; ">
+        <img src="six.png" alt="" id="two" style="position: absolute;margin-top: 600px;margin-left: 950px;z-index: -1;">
+        <img src="six.png" alt="" id="three" style="position: absolute;margin-top: 600px;margin-left: 550px;z-index: -1;">
         <img src="five.png" alt="" id="four" style="position: absolute;margin-top: 620px;margin-left: 300px;z-index: -1; width: 500px;height: 300px;">
         <img src="five.png" alt="" id="six" style="position: absolute;margin-top: 635px;margin-left: 550px;z-index: -1; width:250px; height: 250px;">
         <img src="four.png" alt="" id="seven" style="position: absolute;margin-top: 616px;margin-left: 730px;z-index: -1; width: 270px;height: 300px;">
@@ -87,10 +88,10 @@
 
 
         <div class="ruth2">
-            <button type="button" class="tog" >A</button>
-            <button type="button" class="tog" >B</button>
-            <button type="button" class="tog" >AB</button>
-            <button type="button" class="tog" >O</button>
+            <button type="button" class="tog" id="ablooddown" >A</button>
+            <button type="button" class="tog" id="bblooddown" >B</button>
+            <button type="button" class="tog" id="abblooddown" >AB</button>
+            <button type="button" class="tog" id="oblooddown" >O</button>
             
         </div>
  
@@ -153,11 +154,26 @@
                         var seven = document.getElementById("seven");
                         var eight = document.getElementById("eight");
                         var nine = document.getElementById("nine");
+
+
+
+                        var ablooddown = document.getElementById("ablooddown");
+                        var bblooddown = document.getElementById("bblooddown");
+                        var abblooddown = document.getElementById("abblooddown");
+                        var oblooddown = document.getElementById("oblooddown");
+                        
+                 
+
+
+                        var ablood = document.getElementById("abloodn");
+                        var bblood = document.getElementById("bblood");
+                        var abblood = document.getElementById("abblood");
+                        var oblood = document.getElementById("oblood");
                         
                  
                  
                 
-                        one.style.visibility="hidden"
+                            one.style.visibility="hidden"
                             two.style.visibility="hidden"
                             three.style.visibility="hidden"
                             four.style.visibility="hidden"
@@ -167,6 +183,16 @@
                             eight.style.visibility="hidden"
                             nine.style.visibility="hidden"
 
+
+
+                            ablooddown.style.backgroundColor="transparent";
+                            bblooddown.style.backgroundColor="transparent";
+                            abblooddown.style.backgroundColor="transparent";
+                            oblooddown.style.backgroundColor="transparent";
+                            ablooddown.style.backgroundColor="transparent";
+                            bblooddown.style.backgroundColor="transparent";
+                            abblooddown.style.backgroundColor="transparent";
+                            oblooddown.style.backgroundColor="transparent";
 
 
 
@@ -182,8 +208,17 @@
                             eight.style.visibility="hidden"
                             nine.style.visibility="hidden"
 
-                            one.style.visibility="visible"
-                            nine.style.visibility="visible"
+                            ablooddown.style.backgroundColor="transparent";
+                            bblooddown.style.backgroundColor="transparent";
+                            abblooddown.style.backgroundColor="transparent";
+                            oblooddown.style.backgroundColor="transparent";
+
+
+                            five.style.visibility="visible"
+                            four.style.visibility="visible"
+
+                            ablooddown.style.backgroundColor="red";
+                            abblooddown.style.backgroundColor="red";
                       
                          }
 
@@ -200,8 +235,17 @@
                             nine.style.visibility="hidden"
 
 
+                            three.style.visibility="visible"
                             six.style.visibility="visible"
-                            two.style.visibility="visible"
+
+                             ablooddown.style.backgroundColor="transparent";
+                            bblooddown.style.backgroundColor="transparent";
+                            abblooddown.style.backgroundColor="transparent";
+                            oblooddown.style.backgroundColor="transparent";
+
+                            bblooddown.style.backgroundColor="red";
+                            abblooddown.style.backgroundColor="red";
+                      
                          }
 
                          function abbloodfunction(){ 
@@ -215,8 +259,17 @@
                             eight.style.visibility="hidden"
                             nine.style.visibility="hidden"
 
-                            three.style.visibility="visible"
-                            four.style.visibility="visible"
+                            one.style.visibility="visible"
+
+
+                             ablooddown.style.backgroundColor="transparent";
+                            bblooddown.style.backgroundColor="transparent";
+                            abblooddown.style.backgroundColor="transparent";
+                            oblooddown.style.backgroundColor="transparent";
+
+                            abblooddown.style.backgroundColor="red";
+                      
+                            
                          } 
                          
                          function obloodfunction(){
@@ -231,17 +284,33 @@
                             nine.style.visibility="hidden"
 
 
-                            one.style.visibility="visible"
+                            nine.style.visibility="visible"
+                            eight.style.visibility="visible"
                             two.style.visibility="visible"
-                            one.style.visibility="visible"
-                            two.style.visibility="visible"
+                            seven.style.visibility="visible"
+
+
+
+                            ablooddown.style.backgroundColor="transparent";
+                            bblooddown.style.backgroundColor="transparent";
+                            abblooddown.style.backgroundColor="transparent";
+                            oblooddown.style.backgroundColor="transparent";
+
+
+                            ablooddown.style.backgroundColor="red";
+                            bblooddown.style.backgroundColor="red";
+                            abblooddown.style.backgroundColor="red";
+                            oblooddown.style.backgroundColor="red";
+                      
                          }
                  
 
     
+
+
+
                  </script>
-            
-            <h1>dfhfjudujy</h1>
+            <script src="./me.js"></script>
 
     
 </body>
